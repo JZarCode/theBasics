@@ -1,16 +1,19 @@
 CC = gcc
 
-all: read
+all: byFile byChar
 
-read: readFile.o
-	$(CC) readFile.c -o read
+byFile: readFile.o
+	$(CC) readFile.c -o byFile
 
 readFile.o: readFile.c
 	$(CC) -c readFile.c
 
-run:
-	./read testing.txt
+byChar: readByChar.o
+	$(CC) readByChar.c -o byChar
+
+readByChar.o: readByChar.c
+	$(CC) -c readByChar.c
 
 clean:
-	rm *o read
+	rm *o byFile byChar
 
