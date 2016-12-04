@@ -1,6 +1,6 @@
 CC = gcc
 
-all: args flags
+all: args flags addArgs
 
 args: args.o
 	$(CC) args.c -o args
@@ -14,5 +14,11 @@ flags: flags.o
 flags.o: flags.c
 	$(CC) -c flags.c
 
+addArgs: intArgs.o
+	$(CC) intArgs.c -o addArgs
+
+intArgs.o: intArgs.c
+	$(CC) -c intArgs.c
+
 clean:
-	rm *o args flags
+	rm *o args flags addArgs
