@@ -1,0 +1,8 @@
+This is a txt file for testing. This is line 1
+The brown dog skipped across the street to see the chicken.
+
+This file now has a blank line before this line on line 3.
+I am writing a letter to myself about nothing because I am bored and need to improve my coding abilities.
+This is another line 
+Now I am watching SULLY
+Last Line END OF THE FILE
