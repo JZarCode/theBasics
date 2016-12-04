@@ -1,0 +1,12 @@
+CC = gcc
+
+all: person
+
+person: struct.o
+	$(CC) stuct.c -o person
+
+struct.o: struct.c
+	$(CC) -c struct.c
+
+clean:
+	rm *o person
