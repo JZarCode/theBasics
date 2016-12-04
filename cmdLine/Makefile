@@ -1,15 +1,18 @@
 CC = gcc
 
-all: cmdL
+all: args flags
 
-cmdL: cmdL.o
-	$(CC) cmdL.c -o cmdL
+args: args.o
+	$(CC) args.c -o args
 
-cmdL.o: cmdL.c
-	$(CC) -c cmdl.c
+args.o: args.c
+	$(CC) -c args.c
 
-run:
-	./cmdL
+flags: flags.o
+	$(CC) flags.c -o flags
+
+flags.o: flags.c
+	$(CC) -c flags.c
 
 clean:
-	rm *o cmdL
+	rm *o args flags
