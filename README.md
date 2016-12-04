@@ -1,2 +1,2 @@
 # theBasics
-CmdLine, parsing, file processing
+Command Line parsing, file processing
